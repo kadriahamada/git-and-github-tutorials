@@ -1,0 +1,73 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: monospace;
+  line-height: 24px;
+}
+
+body {
+  height: 100vh;
+  margin: 10px;
+  padding: 10px;
+}
+header {
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 40px;
+  color: aliceblue;
+  align-items: center;
+  flex-direction: row;
+  align-content: space-around;
+  gap: 20px;
+  padding: 12px;
+}
+header > nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+header > nav > ul > li > a {
+  margin-right: 12px;
+  color: pink;
+}
+
+section {
+  margin-bottom: 12px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: aliceblue;
+  height: 300px;
+  padding: 12px;
+}
+
+/* Animation */
+.name {
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: maroon;
+  color: #fff;
+  font-size: 22px;
+  border: 4px solid magenta;
+  /* position: absolute; */
+  margin: auto;
+  padding: 12px;
+}
+
+.name {
+  animation: pointdown 1000ms infinite alternate-reverse;
+}
+
+@keyframes pointdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
